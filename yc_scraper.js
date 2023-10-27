@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 (async () => {
-    let batches = ['S21', 'W21', 'S22', 'W22', 'S23'];
+    let batches = ['S21', 'W21', 'S22', 'W22', 'S23', 'W23'];
     for(let i = 0; i < batches.length; i ++) {
         let batch = batches[i];
         let page = await fetch(`https://api.ycombinator.com/v0.1/companies?batch=${batch}`);
